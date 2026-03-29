@@ -1,13 +1,13 @@
-#  CommonGround – JavaFX Social Connection App
+# User management System App
 
-A desktop friendship-matching application built with **JavaFX**, **PostgreSQL**, and **Maven**.
+ A user management system built with **JavaFX**, **PostgreSQL**, and **Maven**.
 
-CommonGround allows users to:
+The system allows to:
 
 -  Create and manage profiles  
 -  Connect with other users  
 -  Match based on shared interests  
-- Administer users and connections  
+-  Administer users and connections  
 
 ---
 
