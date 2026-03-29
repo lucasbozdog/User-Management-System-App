@@ -1,28 +1,17 @@
-# 🌍 CommonGround – JavaFX Social Connection App
+#  CommonGround – JavaFX Social Connection App
 
 A desktop friendship-matching application built with **JavaFX**, **PostgreSQL**, and **Maven**.
 
 CommonGround allows users to:
 
-- 👥 Create and manage profiles  
-- 🤝 Connect with other users  
-- 🎯 Match based on shared interests  
-- 🛠 Administer users and connections  
+-  Create and manage profiles  
+-  Connect with other users  
+-  Match based on shared interests  
+- Administer users and connections  
 
 ---
 
-## 🏗️ Tech Stack
-
-- ☕ Java 17  
-- 🎨 JavaFX  
-- 🗄 PostgreSQL  
-- 📦 Maven  
-- 🧩 FXML (UI layout)  
-- 🎯 JDBC (database connection)  
-
----
-
-## 📂 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -44,20 +33,20 @@ src/
 
 ---
 
-# 🚀 How To Run The Project
+#  How To Run The Project
 
-## 1️⃣ Requirements
+## Requirements
 
 Before running the project, install:
 
-- ✅ JDK 17  
-- ✅ Maven  
-- ✅ JavaFX SDK  
-- ✅ PostgreSQL  
+-  JDK 17  
+-  Maven  
+-  JavaFX SDK  
+-  PostgreSQL  
 
 ---
 
-## 2️⃣ Database Setup (PostgreSQL)
+##  Database Setup (PostgreSQL)
 
 Create a database (example):
 
@@ -108,7 +97,7 @@ INSERT INTO users (id, name, username, avatar) VALUES
 
 ---
 
-## 3️⃣ Configure Database Credentials
+##  Configure Database Credentials
 
 Open:
 
@@ -126,7 +115,7 @@ String password = "lucabozdog";
 
 ---
 
-## 4️⃣ Run With Maven
+##  Run With Maven
 
 Navigate to the folder containing `pom.xml`:
 
@@ -136,7 +125,7 @@ mvn clean javafx:run
 
 ---
 
-## 5️⃣ Run In IntelliJ (Recommended)
+##  Run In IntelliJ (Recommended)
 
 1. Open project as Maven project  
 2. Ensure JDK 17 is selected  
@@ -154,18 +143,18 @@ App.java
 
 ---
 
-# 🧠 Architecture Overview
+#  Architecture Overview
 
-### 🖥 App.java  
+### App.java  
 Entry point of the JavaFX application.
 
-### 🔄 SceneRouter  
+### SceneRouter  
 Manages navigation between scenes (Role Select, Admin, User).
 
-### 🗄 DbUserRepository  
+### DbUserRepository  
 Handles all database interactions using JDBC.
 
-### 🎮 Controllers  
+### Controllers  
 - RoleSelectController  
 - AdminController  
 - UserController  
@@ -174,18 +163,17 @@ Each controller manages UI logic and user interaction.
 
 ---
 
-# ✨ Features
+# Features
 
-- 👤 User profile management  
-- 🔍 Interest-based connections  
-- ➕ Add / remove users  
-- 🔗 Create friendships  
-- 🧑‍💼 Admin panel  
-- 🎨 Styled UI with CSS  
+-  User profile management  
+-  Interest-based connections  
+-  Add / remove users  
+-  Create friendships  
+-  Admin panel  
 
 ---
 
-# ⚠️ Important Notes
+#  Important Notes
 
 - PostgreSQL must be running before launching the app.  
 - JavaFX is not bundled with Java — make sure it is installed.  
@@ -194,13 +182,6 @@ Each controller manages UI logic and user interaction.
 
 ---
 
-# 📌 Future Improvements
-
-- 🔐 Authentication system  
-- 💬 Chat system  
-- 🌐 Web-based version (Spring Boot)  
-- 📊 Advanced matching algorithm  
-- 🖼 Real avatar uploads
 
 
 
