@@ -1,0 +1,208 @@
+/* ===== Global ===== */
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-background-color: #f3f7ff;
+}
+
+/* Padding around whole scene so content never hugs window edges */
+.scene-padding {
+    -fx-padding: 18;
+}
+
+/* ===== Cards ===== */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 18;
+    -fx-padding: 22;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.14), 20, 0.25, 0, 7);
+}
+
+/* Light blue header "card" (NOT full-width bar) */
+.header-card {
+    -fx-background-color: #e9f2ff;
+    -fx-background-radius: 16;
+    -fx-padding: 12 14;
+    -fx-border-color: #d5e6ff;
+    -fx-border-radius: 16;
+}
+
+/* ===== Typography ===== */
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #111827;
+}
+
+.subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #5b6472;
+}
+
+.page-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #0f172a;
+}
+
+.muted {
+    -fx-text-fill: #5b6472;
+    -fx-font-weight: 600;
+}
+
+/* Bigger section titles (fix small “Connect users”) */
+.section-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #0f172a;
+}
+
+/* ===== Side panel card ===== */
+.side-card {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-padding: 14;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 16;
+}
+
+/* ===== Buttons (rounded everywhere) ===== */
+.btn {
+    -fx-font-weight: 800;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-padding: 10 16;
+    -fx-cursor: hand;
+
+    /* important: makes CSS win over default skin */
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.primary-btn {
+    -fx-background-color: #4d8dff; /* lighter blue, not harsh */
+    -fx-text-fill: white;
+}
+.primary-btn:hover { -fx-background-color: #3f7df0; }
+
+.secondary-btn {
+    -fx-background-color: #eef2f8;
+    -fx-text-fill: #0f172a;
+}
+.secondary-btn:hover { -fx-background-color: #e2e8f2; }
+
+.danger-btn {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+}
+.danger-btn:hover { -fx-background-color: #dc2626; }
+
+/* ===== Inputs ===== */
+.text-field, .password-field {
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-border-color: #d6deea;
+    -fx-background-color: white;
+    -fx-padding: 10 12;
+    -fx-background-insets: 0;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #4d8dff;
+    -fx-effect: dropshadow(gaussian, rgba(77,141,255,0.28), 12, 0.35, 0, 0);
+}
+
+/* ===== TableView ===== */
+.table-view {
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: #e2e8f0;
+    -fx-background-color: white;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f1f5ff; /* light blue tint */
+    -fx-background-radius: 16 16 0 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: 800;
+    -fx-text-fill: #0f172a;
+}
+
+.table-row-cell:filled:selected, .table-row-cell:filled:selected .text {
+    -fx-background-color: #dbeaff;
+    -fx-text-fill: #0f172a;
+}
+
+/* ===== ListView ===== */
+.list-view {
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: #e2e8f0;
+    -fx-background-color: white;
+}
+
+/* ===== ScrollPane ===== */
+.scroll-pane {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* ===== Separators ===== */
+.separator .line {
+    -fx-border-color: #e2e8f0;
+}
+
+/* Force our button styling to win over default Modena skin */
+.button {
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Make sure our custom buttons keep their colors */
+/* === Role buttons look (pill style) === */
+
+.button.primary-btn {
+    -fx-background-color: #2f6fe5;
+    -fx-text-fill: white;
+
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+
+    -fx-font-weight: 800;
+    -fx-font-size: 14px;
+
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-padding: 12 18;
+}
+
+.button.secondary-btn {
+    -fx-background-color: #e9eff8;
+    -fx-text-fill: #0f172a;
+
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+
+    -fx-font-weight: 800;
+    -fx-font-size: 14px;
+
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-padding: 12 18;
+}
+
+/* Hover for the buttons */
+.button.primary-btn:hover { -fx-background-color: #2a63cc; }
+.button.secondary-btn:hover { -fx-background-color: #dde6f4; }
+
+
+
+
